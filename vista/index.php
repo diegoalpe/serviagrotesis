@@ -46,7 +46,7 @@
         <div class = "col-xs-4">
           <div class="login-box-body">
               <p class="login-box-msg">
-                  <b>Ingrese sus datos para  sesión</b>
+                  <b>Ingrese sus datos para iniciar sesión</b>
               </p>
             <form action="../controlador/sesion.iniciar.controlador.php" method="post">
               <div class="form-group has-feedback">
