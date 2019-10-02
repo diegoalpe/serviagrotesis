@@ -98,9 +98,7 @@
                         <div class="col-xs-3">
                             <select id="cbodepartamento" class="form-control input-sm"></select>
                         </div>
-                        <div class="col-xs-3">
-                            <select id="cboprovincia" class="form-control input-sm"></select>
-                        </div>
+
                         <div class="col-xs-3">
                             <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal" id="btnagregar"><i class="fa fa-copy"></i> Agregar nuevo análisis de suelo</button>
                         </div>
