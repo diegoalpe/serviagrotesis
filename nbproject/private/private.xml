@@ -3,11 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/xampp/htdocs/tesis/serviagro_tesis/vista/index.php</file>
             <file>file:/C:/xampp/htdocs/tesis/serviagro_tesis/vista/principal.vista.php</file>
             <file>file:/C:/xampp/htdocs/tesis/serviagro_tesis/webservice/Cultivo.listar.php</file>
             <file>file:/C:/xampp/htdocs/tesis/serviagro_tesis/vista/sesion.validar.vista.php</file>
             <file>file:/C:/xampp/htdocs/tesis/serviagro_tesis/vista/css/reporte.css</file>
+=======
+            <file>file:/D:/serviagro_tesis/negocio/Usuario.clase.php</file>
+            <file>file:/D:/serviagro_tesis/util/funciones/Funciones.clase.php</file>
+            <file>file:/D:/serviagro_tesis/datos/configuracion.php</file>
+            <file>file:/D:/serviagro_tesis/vista/index.php</file>
+            <file>file:/D:/serviagro_tesis/vista/js/usuario.js</file>
+            <file>file:/D:/serviagro_tesis/datos/Conexion.clase.php</file>
+            <file>file:/D:/serviagro_tesis/controlador/usuario.listar.controlador.php</file>
+>>>>>>> e1ac5ee5642e7761e3f15e9436dfea385e667088
         </group>
     </open-files>
 </project-private>
