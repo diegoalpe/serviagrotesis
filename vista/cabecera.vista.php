@@ -36,8 +36,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-laptop"></i>&nbsp;Transacciones <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Registro de Plan de fertilización</a></li>
-            <li><a href="suelo.vista.php">Suelo</a></li>
+            <li><a href="plan-fertilizacion.vista.php">Registro de Plan de fertilización</a></li>
             <!--<li class="divider"></li>
             <li><a href="#">Transacción n</a></li>-->
           </ul>
