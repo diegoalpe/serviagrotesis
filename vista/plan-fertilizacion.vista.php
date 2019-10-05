@@ -45,37 +45,32 @@
 				  <input type="hidden" name="txttipooperacion" id="txttipooperacion" class="form-control">
 				  <div class="row">
 				    <div class="col-xs-3">
-					<p>Código Agricultor<input type="text" name="txtcodigo" id="txtcodigo" class="form-control input-sm text-center text-bold" placeholder="" readonly=""></p>
+					<p>Código Analisis de suelo<input type="text" name="txtcodigo" id="txtcodigo" class="form-control input-sm text-center text-bold" placeholder="" readonly=""></p>
 				    </div>
 				  </div>
-				  <p>Apellido Paterno <font color = "red">*</font>
-				  	<input type="text" name="txtpaterno" id="txtpaterno" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>Apellido Materno <font color = "red">*</font>
-				  	<input type="text" name="txtmaterno" id="txtmaterno" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>Nombres <font color = "red">*</font>
+                                  <p>Nombre <font color = "red">*</font>
 				  	<input type="text" name="txtnombre" id="txtnombre" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>Direccion <font color = "red">*</font>
-				  	<input type="text" name="txtdireccion" id="txtdireccion" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>Email <font color = "red">*</font>
-				  	<input type="text" name="txtemail" id="txtemail" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>Celular <font color = "red">*</font>
-				  	<input type="text" name="txtcelular" id="txtcelular" class="form-control input-sm" placeholder="" required=""><p>
-				  <p>
-				      Departamento <font color = "red">*</font>
-				      <select class="form-control input-sm" name="cbodepartamentomodal" id="cbodepartamentomodal" required="" >
+                                  <p>Semilla <font color = "red">*</font>
+				  	<input type="text" name="txtsemilla" id="txtsemilla" class="form-control input-sm" placeholder="" required=""><p>
+				  <p>Ubicación <font color = "red">*</font>
+				  	<input type="text" name="txtubicacion" id="txtubicacion" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>descripción <font color = "red">*</font>
+				  	<input type="text" name="txtdescripcion" id="txtdescripcion" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>área <font color = "red">*</font>
+				  	<input type="text" name="txtarea" id="txtarea" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>
+				      Tipo de suelo <font color = "red">*</font>
+				      <select class="form-control input-sm" name="cbosuelomodal" id="cbosuelomodal" required="" >
 
 				      </select>
 				  </p>
-                                  
+                                  <p>Nitrógeno <font color = "red">*</font>
+				  	<input type="text" name="txtnitrogeno" id="txtnitrogeno" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Fósforo <font color = "red">*</font>
+				  	<input type="text" name="txtfosforo" id="txtfosforo" class="form-control input-sm" placeholder="" required=""><p>
 				  <p>
-				      Provincia <font color = "red">*</font>
-				      <select class="form-control input-sm" name="cboprovinciamodal" id="cboprovinciamodal" required="" >
-
-				      </select>
-				  </p>
-				  <p>
-				      Distrito <font color = "red">*</font>
-				      <select class="form-control input-sm" name="cbodistritomodal" id="cbodistritomodal" required="" >
+				      Agricultor <font color = "red">*</font>
+				      <select class="form-control input-sm" name="cboagricultormodal" id="cboagricultormodal" required="" >
 
 				      </select>
 				  </p>
