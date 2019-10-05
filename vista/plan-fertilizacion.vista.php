@@ -67,9 +67,30 @@
                                   <p>Nitrógeno <font color = "red">*</font>
 				  	<input type="text" name="txtnitrogeno" id="txtnitrogeno" class="form-control input-sm" placeholder="" required=""><p>
                                   <p>Fósforo <font color = "red">*</font>
-				  	<input type="text" name="txtfosforo" id="txtfosforo" class="form-control input-sm" placeholder="" required=""><p>
-				  <p>
-				      Agricultor <font color = "red">*</font>
+				  	<input type="text" name="txtfosforo" id="txtfosforo" class="form-control input-sm" placeholder="" required=""><p>				 
+                                  <p>Potasio <font color = "red">*</font>
+				  	<input type="text" name="txtpotasio" id="txtpotasio" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Calcio <font color = "red">*</font>
+				  	<input type="text" name="txtcalcio" id="txtcalcio" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Magnesio <font color = "red">*</font>
+				  	<input type="text" name="txtmagnesio" id="txtmagnesio" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Azufre <font color = "red">*</font>
+				  	<input type="text" name="txtazufre" id="txtazufre" class="form-control input-sm" placeholder="" required=""><p>  
+                                  <p>Boro <font color = "red">*</font>
+				  	<input type="text" name="txtboro" id="txtboro" class="form-control input-sm" placeholder="" required=""><p>  
+                                  <p>Cloro <font color = "red">*</font>
+				  	<input type="text" name="txtcloro" id="txtcloro" class="form-control input-sm" placeholder="" required=""><p>  
+                                  <p>Cobre <font color = "red">*</font>
+				  	<input type="text" name="txtcobre" id="txtcobre" class="form-control input-sm" placeholder="" required=""><p>
+				  <p>Hierro <font color = "red">*</font>
+				  	<input type="text" name="txthierro" id="txthierro" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Magnesio <font color = "red">*</font>
+				  	<input type="text" name="txtMagnesio" id="txtMagnesio" class="form-control input-sm" placeholder="" required=""><p> 
+				  <p>Zing <font color = "red">*</font>
+				  	<input type="text" name="txtzing" id="txtzing" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Silicio <font color = "red">*</font>
+				  	<input type="text" name="txtsilicio" id="txtsilicio" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>Agricultor <font color = "red">*</font>
 				      <select class="form-control input-sm" name="cboagricultormodal" id="cboagricultormodal" required="" >
 
 				      </select>
