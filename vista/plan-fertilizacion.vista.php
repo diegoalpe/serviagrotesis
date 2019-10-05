@@ -137,7 +137,7 @@
 	
 	<!--JS-->
 	<script src="js/cargar-combos.js" type="text/javascript"></script>
-	<script src="js/agricultor.js" type="text/javascript"></script>
+        <script src="js/analisis-suelo.js" type="text/javascript"></script>
 
     </body>
 </html>
