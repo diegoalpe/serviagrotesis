@@ -48,6 +48,11 @@
 					<p>Código Analisis de suelo<input type="text" name="txtcodigo" id="txtcodigo" class="form-control input-sm text-center text-bold" placeholder="" readonly=""></p>
 				    </div>
 				  </div>
+                                  <p>Agricultor <font color = "red">*</font>
+				      <select class="form-control input-sm" name="cboagricultormodal" id="cboagricultormodal" required="" >
+
+				      </select>
+				  </p>
                                   <p>Nombre <font color = "red">*</font>
 				  	<input type="text" name="txtnombre" id="txtnombre" class="form-control input-sm" placeholder="" required=""><p>
                                   <p>Semilla <font color = "red">*</font>
@@ -90,11 +95,7 @@
 				  	<input type="text" name="txtzing" id="txtzing" class="form-control input-sm" placeholder="" required=""><p>
                                   <p>Silicio <font color = "red">*</font>
 				  	<input type="text" name="txtsilicio" id="txtsilicio" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>Agricultor <font color = "red">*</font>
-				      <select class="form-control input-sm" name="cboagricultormodal" id="cboagricultormodal" required="" >
-
-				      </select>
-				  </p>
+                                  
 				  <p>
 				      <font color = "red">* Campos obligatorios</font>
 				  </p>

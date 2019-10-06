@@ -1,27 +1,5 @@
 $(document).ready(function(){
-    cargarComboDepartamento("#cbodepartamento","todos");
-    cargarComboDepartamento("#cbodepartamentomodal","seleccione");
-    listar();
-});
-
-$("#cbodepartamento").change(function(){
-    var codigoDepartamento = $("#cbodepartamento").val();
-    cargarComboProvincia("#cboprovincia", "todos", codigoDepartamento);
-    listar();
-});
-
-$("#cboprovincia").change(function(){
-    var codigoDepartamento = $("#cbodepartamento").val();
-    var codigoProvincia = $("#cboprovincia").val();
-    cargarComboDistrito("#cbodistrito", "todos", codigoDepartamento, codigoProvincia);
-    listar();
-});
-        
-$("#cboprovincia").change(function(){
-    listar();
-});
-
-$("#cbodistrito").change(function(){
+    cargarComboAgricultor("#cboagricultormodal","seleccione");
     listar();
 });
 
@@ -184,7 +162,7 @@ $("#btnagregar").click(function(){
     $("#cboprovinciamodal").val("");
     $("#cbodistritomodal").val("");
     
-    $("#titulomodal").text("Agregar nuevo Analisi de Suelo");
+    $("#titulomodal").text("Agregar nuevo Analisis de Suelo");
     
 });
 
