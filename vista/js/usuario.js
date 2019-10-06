@@ -6,7 +6,7 @@ $(document).ready(function(){
 function listar(){
     $.post
     (
-        "../controlador/usuario..controlador.php"
+        "../controlador/usuario.listar.controlador.php"
     ).done(function(resultado){
         var datosJSON = resultado;
         
