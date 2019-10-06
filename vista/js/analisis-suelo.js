@@ -3,32 +3,8 @@ $(document).ready(function(){
     listar();
 });
 
-$("#cbodepartamentomodal").change(function(){
-    var codigoDepartamento = $("#cbodepartamentomodal").val();
-    cargarComboProvincia("#cboprovinciamodal", "todos", codigoDepartamento);
-});
-$("#cboprovinciamodal").change(function(){
-    var codigoDepartamento = $("#cbodepartamentomodal").val();
-    var codigoProvincia = $("#cboprovinciamodal").val();
-    cargarComboDistrito("#cbodistritomodal", "todos", codigoDepartamento, codigoProvincia);
-});
-
 function listar(){
-    var codigoDepartamento = $("#cbodepartamento").val();
-    if (codigoDepartamento === null){
-        codigoDepartamento = 0;
-    }
-    
-    var codigoProvincia = $("#cboprovincia").val();
-    if (codigoProvincia === null){
-        codigoProvincia = 0;
-    }
-    
-    var codigoDistrito = $("#cbodistrito").val();
-    if (codigoDistrito === null){
-        codigoDistrito = 0;
-    }
-    
+
     $.post
     (
         "../controlador/agricultor.listar.controlador.php",
