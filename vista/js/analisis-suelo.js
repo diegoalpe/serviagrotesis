@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     cargarComboTipoSuelo("#cbotiposuelomodal","todos");
+    listar();
 });
 
 $("#cboagricultor").change(function(){
