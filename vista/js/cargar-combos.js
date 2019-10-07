@@ -88,10 +88,14 @@ function cargarComboTipoSuelo(p_nombreCombo, p_tipo){
     });
 }
 
-function cargarComboCultivo2(p_nombreCombo, p_tipo){
+function cargarComboCultivo2(p_nombreCombo, p_tipo, p_codigoAgricultor){
     $.post
     (
-	"../controlador/cultivo2.cargar.combo.controlador.php"
+	"../controlador/cultivo2.cargar.combo.controlador.php",
+        {
+            p_codigoAgricultor: p_codigoAgricultor
+        }
+
     ).done(function(resultado){
 	var datosJSON = resultado;
 	
@@ -105,7 +109,7 @@ function cargarComboCultivo2(p_nombreCombo, p_tipo){
 
             
             $.each(datosJSON.datos, function(i,item) {
-                html += '<option value="'+item.codigo_agricultor+'">'+item.nombre+'</option>';
+                html += '<option value="'+item.codigo_cultivo+'">'+item.nombre+'</option>';
             });
             
             $(p_nombreCombo).html(html);
