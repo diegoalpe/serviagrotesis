@@ -4,104 +4,66 @@ require_once '../datos/Conexion.clase.php';
 
 class Analisis_suelo extends Conexion {
         
+    private $codigo_suelo;
+    private $codigo_cultivo;
+    private $ubicacion;
+    private $area;
+    private $codigo_tipo_suelo;
     private $codigo_agricultor;
-    private $apellido_paterno;
-    private $apellido_materno;
-    private $nombres;
-    private $direccion;
-    private $num_celular;
-    private $usuario;
-    private $codigo_departamento;
-    private $codigo_provincia;
-    private $codigo_distrito;
     
+    function getCodigo_suelo() {
+        return $this->codigo_suelo;
+    }
+
+    function getCodigo_cultivo() {
+        return $this->codigo_cultivo;
+    }
+
+    function getUbicacion() {
+        return $this->ubicacion;
+    }
+
+    function getArea() {
+        return $this->area;
+    }
+
+    function getCodigo_tipo_suelo() {
+        return $this->codigo_tipo_suelo;
+    }
+
     function getCodigo_agricultor() {
         return $this->codigo_agricultor;
     }
 
-    function getApellido_paterno() {
-        return $this->apellido_paterno;
+    function setCodigo_suelo($codigo_suelo) {
+        $this->codigo_suelo = $codigo_suelo;
     }
 
-    function getApellido_materno() {
-        return $this->apellido_materno;
+    function setCodigo_cultivo($codigo_cultivo) {
+        $this->codigo_cultivo = $codigo_cultivo;
     }
 
-    function getNombres() {
-        return $this->nombres;
+    function setUbicacion($ubicacion) {
+        $this->ubicacion = $ubicacion;
     }
 
-    function getDireccion() {
-        return $this->direccion;
+    function setArea($area) {
+        $this->area = $area;
     }
 
-    function getNum_celular() {
-        return $this->num_celular;
-    }
-
-    function getUsuario() {
-        return $this->usuario;
-    }
-
-    function getCodigo_departamento() {
-        return $this->codigo_departamento;
-    }
-
-    function getCodigo_provincia() {
-        return $this->codigo_provincia;
-    }
-
-    function getCodigo_distrito() {
-        return $this->codigo_distrito;
+    function setCodigo_tipo_suelo($codigo_tipo_suelo) {
+        $this->codigo_tipo_suelo = $codigo_tipo_suelo;
     }
 
     function setCodigo_agricultor($codigo_agricultor) {
         $this->codigo_agricultor = $codigo_agricultor;
     }
 
-    function setApellido_paterno($apellido_paterno) {
-        $this->apellido_paterno = $apellido_paterno;
-    }
-
-    function setApellido_materno($apellido_materno) {
-        $this->apellido_materno = $apellido_materno;
-    }
-
-    function setNombres($nombres) {
-        $this->nombres = $nombres;
-    }
-
-    function setDireccion($direccion) {
-        $this->direccion = $direccion;
-    }
-
-    function setNum_celular($num_celular) {
-        $this->num_celular = $num_celular;
-    }
-
-    function setUsuario($usuario) {
-        $this->usuario = $usuario;
-    }
-
-    function setCodigo_departamento($codigo_departamento) {
-        $this->codigo_departamento = $codigo_departamento;
-    }
-
-    function setCodigo_provincia($codigo_provincia) {
-        $this->codigo_provincia = $codigo_provincia;
-    }
-
-    function setCodigo_distrito($codigo_distrito) {
-        $this->codigo_distrito = $codigo_distrito;
-    }
-
-    public function listar( $p_codigo_departamento, $p_codigo_provincia, $p_codigo_distrito) {
+        public function listar( $p_codigo_agricultor) {
         try {
-            $sql = "select * from f_listar_agricultor(:p_codigo_departamento,:p_codigo_provincia,:p_codigo_distrito)";
+            $sql = "select * from f_listar_analisis_suelo(:p_codigo_agricultor)";
             $sentencia = $this->dblink->prepare($sql);
-            $sentencia->bindParam(":p_codigo_departamento", $p_codigo_departamento);
-            $sentencia->bindParam(":p_codigo_provincia", $p_codigo_provincia);
-            $sentencia->bindParam(":p_codigo_distrito", $p_codigo_distrito);
+            $sentencia->bindParam(":p_codigo_agricultor", $p_codigo_agricultor);
             $sentencia->execute();
             
             $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);

@@ -3,16 +3,21 @@ $(document).ready(function(){
     cargarComboAgricultor("#cboagricultormodal","seleccione");
     listar();
 });
+$("#cboagricultor").change(function(){
+    listar();
+});
 
 function listar(){
-
+    var codigoAgricultor = $("#cboagricultor").val();
+    if (codigoAgricultor === null){
+        codigoAgricultor = 0;
+    }
+    
     $.post
     (
-        "../controlador/agricultor.listar.controlador.php",
+        "../controlador/analisis_suelo.listar.controlador.php",
         {
-            codigoDepartamento: codigoDepartamento,
-            codigoProvincia: codigoProvincia,
-            codigoDistrito: codigoDistrito
+            codigoAgricultor: codigoAgricultor
         }
     ).done(function(resultado){
         var datosJSON = resultado;
@@ -24,14 +29,13 @@ function listar(){
             html += '<table id="tabla-listado" class="table table-bordered table-striped">';
             html += '<thead>';
             html += '<tr style="background-color: #ededed; height:25px;">';
-            html += '<th>CODIGO</th>';
             html += '<th>AGRICULTOR</th>';
-            html += '<th>DIRECCION</th>';
-            html += '<th>EMAIL</th>';
-            html += '<th>CELULAR </th>';
-            html += '<th>DEPARTAMENTO</th>';
-            html += '<th>PROVINCIA</th>';
-            html += '<th>DISTRITO</th>';
+            html += '<th>CULTIVO</th>';
+            html += '<th>SEMILLA</th>';
+            html += '<th>AREA</th>';
+            html += '<th>TIPO DE SUELO</th>';
+            html += '<th>NUTRIENTE</th>';
+            html += '<th>CANTIDAD</th>';
 	    html += '<th style="text-align: center">OPCIONES</th>';
             html += '</tr>';
             html += '</thead>';
@@ -40,14 +44,13 @@ function listar(){
             //Detalle
             $.each(datosJSON.datos, function(i,item) {
                 html += '<tr>';
-                html += '<td align="center">'+item.codigo+'</td>';
-                html += '<td>'+item.nombre+'</td>';
-                html += '<td>'+item.direccion+'</td>';
-                html += '<td>'+item.usuario+'</td>';
-                html += '<td>'+item.num_celular+'</td>';
-                html += '<td>'+item.departamento+'</td>';
-                html += '<td>'+item.provincia+'</td>';
-                html += '<td>'+item.distrito+'</td>';
+                html += '<td>'+item.agricultor+'</td>';
+                html += '<td>'+item.cultivo+'</td>';
+                html += '<td>'+item.semilla+'</td>';
+                html += '<td>'+item.area+'</td>';
+                html += '<td>'+item.tipo_de_suelo+'</td>';
+                html += '<td>'+item.nutriente+'</td>';
+                html += '<td>'+item.cantidad+'</td>';  
 		html += '<td align="center">';
 		html += '<button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#myModal" onclick="leerDatos(' + item.codigo + ')"><i class="fa fa-pencil"></i></button>';
 		html += '&nbsp;&nbsp;';
