@@ -28,24 +28,54 @@ function cargarComboTipoNutriente(p_nombreCombo, p_tipo){
     });
 }
 
-function cargarComboTipoFertilizante(p_nombreCombo, p_tipo){
+function cargarComboTipoNutriente(p_nombreCombo, p_tipo){
     $.post
     (
-	"../controlador/tipo_fertilizante.cargar.combo.controlador.php"
+	"../controlador/tipo_nutriente.cargar.combo.controlador.php"
     ).done(function(resultado){
 	var datosJSON = resultado;
 	
         if (datosJSON.estado===200){
             var html = "";
             if (p_tipo==="seleccione"){
-                html += '<option value="">Seleccione un tipo de fertilizante</option>';
+                html += '<option value="">Seleccione un tipo de nutriente</option>';
             }else{
-                html += '<option value="0">Todos los tipos de fertilizantes</option>';
+                html += '<option value="0">Todos los tipos de nutrientes</option>';
             }
 
             
             $.each(datosJSON.datos, function(i,item) {
-                html += '<option value="'+item.codigo_tipo_fertilizante+'">'+item.nombre+'</option>';
+                html += '<option value="'+item.codigo_tipo_nutriente+'">'+item.nombre+'</option>';
+            });
+            
+            $(p_nombreCombo).html(html);
+	}else{
+            swal("Mensaje del sistema", resultado , "warning");
+        }
+    }).fail(function(error){
+	var datosJSON = $.parseJSON( error.responseText );
+	swal("Error", datosJSON.mensaje , "error");
+    });
+}
+
+function cargarComboTipoSuelo(p_nombreCombo, p_tipo){
+    $.post
+    (
+	"../controlador/tipo_suelo.cargar.combo.controlador.php"
+    ).done(function(resultado){
+	var datosJSON = resultado;
+	
+        if (datosJSON.estado===200){
+            var html = "";
+            if (p_tipo==="seleccione"){
+                html += '<option value="">Seleccione un tipo de cultivo</option>';
+            }else{
+                html += '<option value="0">Todos los tipos de cultivos</option>';
+            }
+
+            
+            $.each(datosJSON.datos, function(i,item) {
+                html += '<option value="'+item.codigo_tipo_cultivo+'">'+item.nombre+'</option>';
             });
             
             $(p_nombreCombo).html(html);

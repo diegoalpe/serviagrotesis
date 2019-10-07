@@ -65,7 +65,7 @@
 				  	<input type="text" name="txtarea" id="txtarea" class="form-control input-sm" placeholder="" required=""><p>
                                   <p>
 				      Tipo de suelo <font color = "red">*</font>
-				      <select class="form-control input-sm" name="cbosuelomodal" id="cbosuelomodal" required="" >
+				      <select class="form-control input-sm" name="cbotiposuelomodal" id="cbosuelomodal" required="" >
 
 				      </select>
 				  </p>

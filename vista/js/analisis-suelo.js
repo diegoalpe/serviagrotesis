@@ -3,6 +3,11 @@ $(document).ready(function(){
     cargarComboAgricultor("#cboagricultormodal","seleccione");
     listar();
 });
+
+$(document).ready(function(){
+    cargarComboTipoSuelo("#cbotiposuelomodal","todos");
+});
+
 $("#cboagricultor").change(function(){
     listar();
 });
@@ -32,7 +37,7 @@ function listar(){
             html += '<th>AGRICULTOR</th>';
             html += '<th>CULTIVO</th>';
             html += '<th>SEMILLA</th>';
-            html += '<th>AREA</th>';
+            html += '<th>AREA (Ha)</th>';
             html += '<th>TIPO DE SUELO</th>';
             html += '<th>NUTRIENTE</th>';
             html += '<th>CANTIDAD</th>';
