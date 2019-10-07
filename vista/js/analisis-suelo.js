@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    cargarComboDepartamento("#cboagricultor","todos");
+    cargarComboAgricultor("#cboagricultor","todos");
     cargarComboAgricultor("#cboagricultormodal","seleccione");
     listar();
 });

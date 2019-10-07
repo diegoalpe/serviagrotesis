@@ -4,7 +4,7 @@ require_once '../datos/Conexion.clase.php';
 
 class Tipo_suelo extends Conexion {
     
-    private $codigoAdministrador;
+    private $codigoSuelo;
     private $nombres;
     private $cargo;
     private $email;
