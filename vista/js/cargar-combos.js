@@ -68,14 +68,14 @@ function cargarComboTipoSuelo(p_nombreCombo, p_tipo){
         if (datosJSON.estado===200){
             var html = "";
             if (p_tipo==="seleccione"){
-                html += '<option value="">Seleccione un tipo de cultivo</option>';
+                html += '<option value="">Seleccione un tipo de suelo</option>';
             }else{
-                html += '<option value="0">Todos los tipos de cultivos</option>';
+                html += '<option value="0">Todos los tipos de suelo</option>';
             }
 
             
             $.each(datosJSON.datos, function(i,item) {
-                html += '<option value="'+item.codigo_tipo_cultivo+'">'+item.nombre+'</option>';
+                html += '<option value="'+item.codigo_tipo_suelo+'">'+item.nombre+'</option>';
             });
             
             $(p_nombreCombo).html(html);
