@@ -105,7 +105,7 @@ function cargarComboCultivo2(p_nombreCombo, p_tipo){
 
             
             $.each(datosJSON.datos, function(i,item) {
-                html += '<option value="'+item.codigo_cultivo+'">'+item.nombre+'</option>';
+                html += '<option value="'+item.codigo_agricultor+'">'+item.nombre+'</option>';
             });
             
             $(p_nombreCombo).html(html);

@@ -7,6 +7,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     cargarComboTipoSuelo("#cbotiposuelomodal","todos");
 });
+
 $(document).ready(function(){
     cargarComboCultivo2("#cbocultivomodal","todos");
 });
