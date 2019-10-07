@@ -86,6 +86,19 @@ public function listar2() {
         }
     }
     
+    public function cargarListaDatosCultivo($p_codigoAgricultor){
+	try {
+            $sql = " select nombre from cultivo where codigo_agricultor = :p_codigo_agricultor order by 2";
+            $sentencia = $this->dblink->prepare($sql);
+            $sentencia->bindParam(":p_codigo_agricultor", $p_codigoAgricultor);
+            $sentencia->execute();
+            $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+            return $resultado;
+        } catch (Exception $exc) {
+            throw $exc;
+        }
+    }
+    
     public function leerDatos($codigoCul) {
         try {
             $sql = "
@@ -228,6 +241,8 @@ public function listar2() {
         return false;
     
 }
+
+
 
 public function obtenerFoto($codigoCultivo) {
         

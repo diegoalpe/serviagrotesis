@@ -8,6 +8,10 @@ $(document).ready(function(){
     cargarComboTipoSuelo("#cbotiposuelomodal","todos");
     listar();
 });
+$(document).ready(function(){
+    cargarComboCultivo2("#cbocultivomodal","todos");
+    listar();
+});
 
 $("#cboagricultor").change(function(){
     listar();

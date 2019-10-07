@@ -53,14 +53,17 @@
 
 				      </select>
 				  </p>
-                                  <p>Nombre <font color = "red">*</font>
-				  	<input type="text" name="txtnombre" id="txtnombre" class="form-control input-sm" placeholder="" required=""><p>
+                                  <p>
+				      Cultivo <font color = "red">*</font>
+				      <select class="form-control input-sm" name="cbocultivomodal" id="cbocultivomodal" required="" >
+
+				      </select>
+				  </p>
                                   <p>Semilla <font color = "red">*</font>
 				  	<input type="text" name="txtsemilla" id="txtsemilla" class="form-control input-sm" placeholder="" required=""><p>
 				  <p>Ubicación <font color = "red">*</font>
 				  	<input type="text" name="txtubicacion" id="txtubicacion" class="form-control input-sm" placeholder="" required=""><p>
-                                  <p>descripción <font color = "red">*</font>
-				  	<input type="text" name="txtdescripcion" id="txtdescripcion" class="form-control input-sm" placeholder="" required=""><p>
+                             
                                   <p>área <font color = "red">*</font>
 				  	<input type="text" name="txtarea" id="txtarea" class="form-control input-sm" placeholder="" required=""><p>
                                   <p>
