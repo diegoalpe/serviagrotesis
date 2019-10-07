@@ -113,7 +113,7 @@
 
                     <div class="row">
                         <div class="col-xs-3">
-                            <select id="cbodepartamento" class="form-control input-sm"></select>
+                            <select id="cboagricultormodal" class="form-control input-sm"></select>
                         </div>
 
                         <div class="col-xs-3">
